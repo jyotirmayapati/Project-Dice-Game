@@ -58,19 +58,19 @@ function rollDice() {
         winner.textContent = "It's a tie!";
     } else {
         if (scoreA === scoreB) {
-            diceA.style.backgroundColor = "yellow";
-            diceB.style.backgroundColor = "yellow";
-            diceC.style.backgroundColor = "#f0f0f0";
+            diceA.style.backgroundColor = "blue";
+            diceB.style.backgroundColor = "blue";
+            diceC.style.backgroundColor = "red";
             winner.textContent = "Members A and B tied!";
         } else if (scoreA === scoreC) {
-            diceA.style.backgroundColor = "yellow";
-            diceB.style.backgroundColor = "#f0f0f0";
-            diceC.style.backgroundColor = "yellow";
+            diceA.style.backgroundColor = "blue";
+            diceB.style.backgroundColor = "red";
+            diceC.style.backgroundColor = "blue";
             winner.textContent = "Members A and C tied!";
         } else {
-            diceA.style.backgroundColor = "#f0f0f0";
-            diceB.style.backgroundColor = "yellow";
-            diceC.style.backgroundColor = "yellow";
+            diceA.style.backgroundColor = "red";
+            diceB.style.backgroundColor = "blue";
+            diceC.style.backgroundColor = "blue";
             winner.textContent = "Members B and C tied!";
         }
     }
