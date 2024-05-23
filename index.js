@@ -33,10 +33,15 @@ function rollDice() {
             diceA.style.backgroundColor = "yellow";
             diceB.style.backgroundColor = "green";
             diceC.style.backgroundColor = "red";
-        }else{
+        }else if(scoreA < scoreC){
             diceA.style.backgroundColor = "red";
             diceB.style.backgroundColor = "green";
             diceC.style.backgroundColor = "yellow";
+        }
+        else{
+            diceA.style.backgroundColor = "blue";
+            diceB.style.backgroundColor = "green";
+            diceC.style.backgroundColor = "blue";
         }
 
         winner.textContent = "Member B wins!";
@@ -45,9 +50,14 @@ function rollDice() {
             diceA.style.backgroundColor = "yellow";
             diceB.style.backgroundColor = "red";
             diceC.style.backgroundColor = "green";
-        }else{
+        }else if(scoreA < scoreB){
             diceA.style.backgroundColor = "red";
             diceB.style.backgroundColor = "yellow";
+            diceC.style.backgroundColor = "green";
+        }
+        else{
+            diceA.style.backgroundColor = "blue";
+            diceB.style.backgroundColor = "blue";
             diceC.style.backgroundColor = "green";
         }
         winner.textContent = "Member C wins!";
